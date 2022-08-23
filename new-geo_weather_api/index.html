@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather api page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="/images/weather-news.png">
+</head>
+<body class="body">
+    <form id="form">
+    <input id="city-name" type="text" placeholder="enter a city name">
+    <button type="submit" id="btn" >Submit</button>
+    </form>
+    <div class="weather-wrapper">
+    <div class="current-temp-wrapper" id="current-temp-wrapper">
+        <div class="left-wrapper" id="left-wrapper">
+            <img class="icon-wrapper" id="icon-wrapper" alt="">
+            <div class="temperature-wrapper" id="temperature-wrapper"></div>
+            <div class="otherprops-wrapper">
+                <div class="humidity-wrapper" id="humidity-wrapper"></div>
+                <div class="windspeed-wrapper" id="windspeed-wrapper"></div>
+            </div>
+        </div>
+        <div class="right-wrapper">
+            <div class="city-wrapper" id="city-wrapper"></div>
+            <div class="time-date-wrapper" id="time-date-wrapper"></div>
+            <div class="description-wrapper" id="description-wrapper"></div>
+        </div>
+    </div>
+   <div></div>
+   <div></div>
+        <div class="slider-wrapper" id="slider-wrapper">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

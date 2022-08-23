@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Google Sans,arial,sans-serif;
+}
+.weather-wrapper{
+    color:whitesmoke;
+    background-color: none;
+}
+
+#btn{
+    color: green; border:5px green solid; 
+}
+#forecast-day-wrapper{
+    justify-self: center;
+}
+.weather-wrapper{
+    display:block;
+}
+.current-temp-wrapper
+{
+    display:flex;
+    flex-direction: row;
+    border: 2px ;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.temperature-wrapper{
+    font-weight: 30px;
+    font-size: large;
+}
+.left-wrapper{
+    display:flex;
+    border:5px ;
+    margin-right: auto;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap:10%;
+    align-items:center;
+    /* width: 150px;
+    gap:10%; */
+    width:50%;
+}
+#right-wrapper{
+    display:flex;
+    border:2px ;
+    flex-direction: column;
+    align-content: space-between;
+    width: 50%;
+}
+#icon-wrapper,#temperature-wrapper,#humidity-wrapper,#windspeed-wrapper,#city-wrapper,#time-date-wrapper,#description-wrapper{
+    border: 2px;
+    display:flex;
+    justify-content: flex-end;  
+}
+.othereprops-wrapper{
+    text-align: left;
+}
+#slider-wrapper{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    border:2px ;
+    flex-direction: row;
+    gap: 5%;
+    row-gap: 20px;
+    /* justify-content: space-between; */
+}
+#forecast-days{
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+#min-max-wrapper{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#forecast-day-wrapper,#mintemp-wrapper,#maxtemp-wrapper{
+    border:2px ;
+    display:flex;
+}
+.forecast-icon-wrapper{
+    height: 50px;
+    width:50px ;
+}
