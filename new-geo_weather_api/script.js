@@ -262,8 +262,7 @@ var obtainedData= async(url,options)=>{
 	}
 	catch(err)
 	{
-		
-		temperaturecontent.innerText="INVALID INPUT!!"
+		//temperaturecontent.innerText="INVALID INPUT!!"
 		//alert("invalid entry for city field, please ensure the given input is a city");
 		let timeout;
 			function myFunction() 
@@ -275,6 +274,7 @@ var obtainedData= async(url,options)=>{
 				loaderwrap.innerHTML="";
 			}
 			window.location.reload();
+			console.log(err);	
 	}
 		
 }
@@ -288,7 +288,7 @@ function getIcon(text) {
 		case text.includes("Showers"): return "images/rain 2.png"
 		case text.includes("Cloud"): return "images/partly_cloudy.png"
 		case text.includes("Snow"): return "images/snow.png"
-		case text.includes("Fog") || ele.text.includes("Haze"): return "images/fog.png"
+		case text.includes("Fog") || text.includes("Haze"): return "images/fog.png"
 		case text.includes("Clear"): return "images/sunny.png"
 		case text.includes("Sun"): return "images/sun.png"
 		default: 
