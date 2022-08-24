@@ -55,6 +55,7 @@ handle.addEventListener("submit",retrieveData)
 function retrieveData(event)
 {
    event.preventDefault();
+   document.getElementById("slider-wrapper").innerHTML=""
    var city=document.getElementById("city-name").value;
    var url=`https://yahoo-weather5.p.rapidapi.com/weather?location=${city}&format=json&u=c`
    console.log("city-name:",city,"url:",url)
@@ -155,7 +156,7 @@ var obtainedData= async(url,options)=>{
 	}
 
 	for(let i=0;i<7;i++){
-		
+				
 		document.getElementById("slider-wrapper").innerHTML+=`
 		<div class="forecast-days" id="forecast-days">
 			<div class="forecast-day-wrapper">${response.forecasts[i].day}</div>
@@ -210,6 +211,7 @@ var obtainedData= async(url,options)=>{
 			else{
 				console.log(response.forecasts[i].text +"in"+ i);
 			}
+		
 	}
 }
 
