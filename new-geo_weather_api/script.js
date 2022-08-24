@@ -55,7 +55,7 @@ handle.addEventListener("submit",retrieveData)
 function retrieveData(event)
 {
    event.preventDefault();
-   document.getElementById("slider-wrapper").innerHTML=""
+	document.getElementById("slider-wrapper").innerHTML="";
    var city=document.getElementById("city-name").value;
    var url=`https://yahoo-weather5.p.rapidapi.com/weather?location=${city}&format=json&u=c`
    console.log("city-name:",city,"url:",url)
