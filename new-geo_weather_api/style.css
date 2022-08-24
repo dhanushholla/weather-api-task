@@ -1,5 +1,5 @@
 * {
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
     box-sizing: border-box;
     font-family: Google Sans,arial,sans-serif;
@@ -9,10 +9,13 @@
     background-color: none;
 }
 
-#btn{
-    color: green; border:5px green solid; 
+button{
+    color:whitesmoke; border:5px; 
+    background-color: #008CBA;
+    border-radius: 6px;
+    padding:5px;
 }
-#forecast-day-wrapper{
+.forecast-day-wrapper{
     justify-self: center;
 }
 .weather-wrapper{
@@ -25,6 +28,7 @@
     border: 2px ;
     justify-content:space-between;
     flex-wrap: wrap;
+    /* border: 5px red outset; */
 }
 .temperature-wrapper{
     font-weight: 30px;
@@ -32,7 +36,8 @@
 }
 .left-wrapper{
     display:flex;
-    border:5px ;
+    /* border:5px ; */
+    /* border-right: 5px red outset; */
     margin-right: auto;
     flex-direction:row;
     flex-wrap: wrap;
@@ -43,14 +48,14 @@
     gap:10%; */
     width:50%;
 }
-#right-wrapper{
+.right-wrapper{
     display:flex;
     border:2px ;
     flex-direction: column;
     align-content: space-between;
     width: 50%;
 }
-#icon-wrapper,#temperature-wrapper,#humidity-wrapper,#windspeed-wrapper,#city-wrapper,#time-date-wrapper,#description-wrapper{
+.icon-wrapper,.temperature-wrapper,.humidity-wrapper,.windspeed-wrapper,.city-wrapper,.time-date-wrapper,.description-wrapper{
     border: 2px;
     display:flex;
     justify-content: flex-end;  
@@ -58,7 +63,7 @@
 .othereprops-wrapper{
     text-align: left;
 }
-#slider-wrapper{
+.slider-wrapper{
     width: 100%;
     display:flex;
     flex-wrap: wrap;
@@ -68,21 +73,48 @@
     row-gap: 20px;
     /* justify-content: space-between; */
 }
-#forecast-days{
+.forecast-days{
     display:flex;
     flex-direction: column;
     align-content: space-between;
+    border: 5px grey outset;
 }
-#min-max-wrapper{
+.min-max-wrapper{
     display:flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
-#forecast-day-wrapper,#mintemp-wrapper,#maxtemp-wrapper{
+.forecast-day-wrapper,.mintemp-wrapper,.maxtemp-wrapper{
     border:2px ;
     display:flex;
 }
 .forecast-icon-wrapper{
     height: 50px;
     width:50px ;
+}
+
+@keyframes loadinganimation {
+    0%{
+        opacity: 1;
+        color:teal;
+        font-size: large;
+    }
+    25%{
+        opacity: 0.8;
+        color:aquamarine;
+        font-size: medium;
+    }
+    50%{
+        opacity: 0.4;
+        color:red;
+        font-size: medium;
+    }
+    100%{
+        opacity: 1;
+        color:aqua;
+        font-size: large;
+    }  
+}
+.loader{
+    animation: loadinganimation 10s infinite;
 }
